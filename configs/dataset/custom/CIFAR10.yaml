@@ -1,0 +1,17 @@
+_target_: main.Custom_Dataset
+
+name: CIFAR10
+download: True
+shuffle: False
+
+mean: [0.49139968, 0.48215827 ,0.44653124]
+var: [0.24703233, 0.24348505, 0.26158768]
+
+data_size:
+  c: 3
+  x: 32
+  y: 32
+
+label_size: 10
+
+batch_size: ${batch_size}

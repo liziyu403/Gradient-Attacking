@@ -1,0 +1,15 @@
+_target_: main.MnistDataset
+
+download: False
+shuffle: False
+
+mean: [0.13062754273414612]
+var: [0.30810779333114624]
+
+data_size:
+  c: 1
+  x: 28
+  y: 28
+label_size: 10
+
+batch_size: ${batch_size}

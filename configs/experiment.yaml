@@ -1,0 +1,25 @@
+defaults:
+  - config
+  - _self_
+
+visualisation: null
+
+save_data:
+  enable: False
+  log: True
+
+attacker:
+  attacker_criterion:
+    type: iteration
+    value: 500
+    max_iteration: null
+
+hydra:
+  sweeper:
+    params:
+      +seed: 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9
+      model: McMahan_CNN , Custom_ResNet
+      batch_size: 1, 2, 4, 8, 16
+      model.init_method: xavier_normal_, xavier_uniform_ , kaiming_normal_, kaiming_uniform_
+      model.activation: ReLU, Sigmoid
+      client.prune.type: small, null

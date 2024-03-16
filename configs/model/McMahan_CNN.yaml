@@ -1,0 +1,18 @@
+_target_: main.McMahan_CNN
+
+data_size: ${dataset.data_size}
+label_size: ${dataset.label_size}
+
+layers:
+  conv1:
+    out_channels: 32
+    kernel_size: 5
+  conv2:
+    out_channels: 64
+    kernel_size: 5
+  hidden_layer_size: 512
+
+activation: "ReLU"
+
+# could be one of 'kaiming_uniform_', 'kaiming_normal_', 'xavier_uniform_'
+init_method: kaiming_normal_

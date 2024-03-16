@@ -1,0 +1,5 @@
+normalize: True
+duration: 3000
+yscale_log: True
+total_distance: True
+display_images: True

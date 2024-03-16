@@ -1,0 +1,20 @@
+defaults:
+    # one of McMahan_CNN Custom_ResNet
+    - model: McMahan_CNN
+    - dataset: custom/CIFAR10
+    - attacker: attacker
+    - client: client 
+    - optional visualisation: visualisation
+    - _self_
+
+batch_size: 1
+
+save_data:
+    enable: False
+    true_gradient: True
+    data: True
+    label: True
+    fake_data: True
+    fake_label: True
+    history: True
+    log: False

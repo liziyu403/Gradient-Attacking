@@ -1,0 +1,6 @@
+_target_: main.SimpleClient
+
+# random or small or None
+prune: 
+  type: none
+  percentage: 0.2

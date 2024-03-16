@@ -1,0 +1,25 @@
+_target_: main.GradAttacker
+
+# Early stopping criterion
+# Could be one of the following :
+#   Best, Iteration, Threshold, Variation
+defaults:
+  - attacker_criterion: iteration
+
+# Type of optimizer used by the attacker.
+# Could be one of torch.optim class. LBFGS is recommended.
+optimizer:
+  type: Adam
+  learning_rate: 0.1
+  scheduler: False
+
+# Loss function between true gradient and attacker one
+# Could be one of the following :
+#   MSE, cosine_similarity
+loss_function: cosine_similarity 
+
+# Metadata on run configuration
+# Should not be modified. See configs/dataset.
+dummy_batch_size: ${batch_size}
+dummy_data_size: ${dataset.data_size}
+dummy_label_size: ${dataset.label_size}

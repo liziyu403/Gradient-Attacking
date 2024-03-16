@@ -1,0 +1,10 @@
+_target_: main.McMahan_2NN
+
+data_size: ${dataset.data_size}
+label_size: ${dataset.label_size}
+
+hidden_layer_size: 200
+activation: "ReLU"
+
+# could be one of 'kaiming_uniform_', 'kaiming_normal_', 'xavier_uniform_'
+init_method: kaiming_normal_

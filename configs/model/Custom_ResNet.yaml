@@ -1,0 +1,13 @@
+_target_: main.Custom_ResNet
+
+data_size: ${dataset.data_size}
+label_size: ${dataset.label_size}
+
+# Could be one of the following :
+#   18, 20, 32, 56, 110, 18, 34, 50, 101, 152
+layers: 18
+
+activation: "ReLU"
+
+# could be one of 'kaiming_uniform_', 'kaiming_normal_', 'xavier_uniform_'
+init_method: kaiming_normal_
