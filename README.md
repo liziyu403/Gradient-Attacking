@@ -1,7 +1,8 @@
 # Deep Leakage From Gradients [[arXiv]](https://arxiv.org/abs/1906.08935)
-### Weight initialisation influence on data reconstruction via leakage from Gradients.
 
-This project aim to analyse the influence of weight initialisation on data reconstruction via leakage from Gradients.
+![compare](./README.assets/compare.png)
+
+![bn](./README.assets/bn.png)
 
 ### **Launch multi-run based on Hydra Sweeper:**
 
@@ -42,3 +43,4 @@ python main.py -m <options>
 >
 > [ client.prune.percentage ] = any float between 0-1 
 
+![r](./README.assets/r.png)
